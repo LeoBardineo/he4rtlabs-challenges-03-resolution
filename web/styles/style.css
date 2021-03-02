@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body{
+  height: 100%;
+  color: white;
+  background-color: #202932;
+  font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: row;
+}
+
+.welcome > p {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.welcome > h1 {
+  font-size: 48px;
+  color: #8743CC;
+}
+
+.welcome > img {
+  width: 415px;
+  margin-top: 25px;
+}
+
+.login {
+  background-color: #333E4A;
+  border-radius: 10px;
+  margin-left: 50px;
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login > h1 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.login > form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.login > form > .icon-input {
+  background-color: #202932;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #202932;
+  transition: 0.25s border;
+  padding: 0 15px;
+  height: 56px;
+}
+
+.login > form > .icon-input > .feather {
+  color: #595c5e;
+}
+
+.login > form > .icon-input:nth-child(2) {
+  margin-top: 15px;
+}
+
+.login > form > .icon-input:focus-within {
+  border: 2px solid #8743CC;
+}
+
+.login > form > .icon-input:focus-within .feather {
+  color: #8743CC;
+}
+
+.login > form > .icon-input > input {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.login > form > a {
+  color: #BDBDBD;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-left: 20px;
+  transition: 0.25s color;
+}
+
+.login > form > a:hover {
+  color: #8743CC;
+}
+
+.login > form > a:last-child {
+  font-size: 18px;
+  align-self: center;
+  margin: 0;
+}
+
+.login > form > button {
+  font-family: 'Inter', sans-serif;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.login > form > button[type="submit"] {
+  margin-top: 35px;
+  background-color: #8743CC;
+}
+
+.login > form > button.submit-github {
+  background-color: #202932;
+}
+
+.submit-github {
+  margin: 15px 0 5px;
+}
+
+.feather{
+  width: 21px;
+  height: 21px;
+  margin-right: 8px;
+}
+
+#testinput{
+  font-family: 'Inter', sans-serif;
+  color: white;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 300;
+}
