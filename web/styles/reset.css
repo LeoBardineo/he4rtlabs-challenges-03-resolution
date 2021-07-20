@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100vh;
+}
+
+body{
+  color: white;
+  background-color: #202932;
+  font-family: 'Roboto', sans-serif;
+}
