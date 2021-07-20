@@ -4,12 +4,11 @@
   box-sizing: border-box;
 }
 
-
 html, body{
   height: 100%;
   color: white;
   background-color: #202932;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
@@ -73,7 +72,12 @@ html, body{
 }
 
 .login > form > .icon-input > .feather {
+  transition: 0.25s color;
   color: #595c5e;
+}
+
+.login > form > .icon-input > .feather.active {
+  color: #FFF;
 }
 
 .login > form > .icon-input:nth-child(2) {
@@ -89,7 +93,7 @@ html, body{
 }
 
 .login > form > .icon-input > input {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
   background: none;
   border: none;
@@ -119,7 +123,7 @@ html, body{
 }
 
 .login > form > button {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   height: 50px;
   outline: none;
   border: none;
@@ -153,7 +157,7 @@ html, body{
 }
 
 #testinput{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
   background: none;
   border: none;
