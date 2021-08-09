@@ -1,7 +1,6 @@
 .welcome {
   width: 450px;
   height: 520px;
-  border-radius: 10px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   position: relative;
@@ -29,11 +28,7 @@
 .welcome-register {
   width: 450px;
   height: 520px;
-  padding: 40px 50px 0px;
-  border-radius: 10px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  position: relative;
+  padding: 0px 50px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -43,6 +38,7 @@
 
 .welcome-register h2 {
   font-size: 24px;
+  margin-bottom: 24px;
 }
 
 .welcome-register span {

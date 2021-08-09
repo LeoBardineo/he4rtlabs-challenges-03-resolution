@@ -1,9 +1,35 @@
 .wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  background-color: #202932;
+}
+
+.wrapper-register {
+  background-color: #8743CC;
+}
+
+.on-top {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  z-index: 2;
+}
+
+.animate-switch-form {
+  animation: switch-form 1s ease-in-out;
+}
+
+@keyframes switch-form {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
+  }
 }

@@ -1,20 +1,20 @@
-welcomeContent = `
+const welcomeLogin = `
 <div class="anime-top-to-center">
   <p>Bem-vindo à</p>
   <h1>He4rt Developers</h1>
 </div>
 <div class="anime-bottom-to-center">
-  <img loading="lazy" src="assets/he4rt-logo.svg" alt="Logo da Heart Developers">
+  <img src="assets/he4rtdevs.webp" alt="Logo da Heart Developers">
 </div>
 `
 
-loginContent = `
+const loginForm = `
 <div class="center-content anime-right-to-center">
   <h1>Acesse a plataforma</h1>
   <form class="login-margin">
     <div class="icon-input">
       <i data-feather="mail"></i>
-      <input type="email" name="loginEmail" id="loginEmail" placeholder="E-mail" autocomplete="on" required>
+      <input type="email" name="loginEmail" id="loginEmail" placeholder="E-mail" required>
     </div>
     <div class="icon-input">
       <i data-feather="lock"></i>
@@ -29,22 +29,34 @@ loginContent = `
       <i data-feather="github"></i>
       Entrar pelo GitHub
     </button>
-    <a class="login__form__link" id="switch-form" href="">Não tenho uma conta</a>
+    <a id="switch-login-btn" href="">Não tenho uma conta</a>
   </form>
 </div>
 `
 
-registerContent = `
+const welcomeRegister = `
+<div class="anime-top-to-center">
+  <h2>A He4rt Developers é uma comunidade totalmente sem fins lucrativos
+    formada por desenvolvedores incríveis.
+  </h2>
+  <span>Junte-se a nós!</span>
+</div>
+<div class="anime-bottom-to-center">
+  <img src="assets/Saly-10.webp" alt="Logo da Heart Developers">
+</div>
+`
+
+const registerForm = `
 <div class="center-content">
   <h1>Crie sua conta</h1>
   <form class="register-margin">
     <div class="icon-input">
       <i data-feather="user"></i>
-      <input type="text" name="registerUsername" id="registerUsername" placeholder="Nome de usuário" autocomplete="on" required>
+      <input type="text" name="registerUsername" id="registerUsername" placeholder="Nome de usuário" required>
     </div>
     <div class="icon-input">
       <i data-feather="mail"></i>
-      <input type="email" name="email" id="email" placeholder="E-mail" required>
+      <input type="email" name="registerEmail" id="registerEmail" placeholder="E-mail" required>
     </div>
     <div class="icon-input">
       <i data-feather="lock"></i>
@@ -52,13 +64,36 @@ registerContent = `
     </div>
     <div class="icon-input">
       <i data-feather="lock"></i>
-      <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirmar senha" required>
+      <input type="password" name="registerConfirmPassword" id="registerConfirmPassword"
+        placeholder="Confirmar senha" required>
     </div>
-    <button class="login__form__button login__form__button--submit" type="submit">
+    <button type="submit">
       <i data-feather="user-plus"></i>
       Cadastrar
     </button>
-    <a class="login__form__link" id="switch-form" href="">Já tenho uma conta</a>
+    <a id="switch-register-btn" href="">Já tenho uma conta</a>
   </form>
+</div>
+`
+
+const wrapperLogin = `
+<div class="wrapper wrapper-login on-top">
+  <section class="welcome">
+    ${welcomeLogin}
+  </section>
+  <section class="form-section">
+    ${loginForm}
+  </section>
+</div>
+`
+
+const wrapperRegister = `
+<div class="wrapper wrapper-register">
+  <section class="welcome-register">
+    ${welcomeRegister}
+  </section>
+  <section class="form-section register-form">
+    ${registerForm}
+  </section>
 </div>
 `

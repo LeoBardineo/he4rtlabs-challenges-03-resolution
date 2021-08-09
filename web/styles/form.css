@@ -1,0 +1,162 @@
+.form-section {
+  width: 450px;
+  height: 520px;
+
+  background-color: #333E4A;
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-form {
+  background-color: #5d408b;
+}
+
+.form-section h1 {
+  font-size: 36px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-top: 50px;
+}
+
+.form-section form .icon-input {
+  background-color: #202932;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #202932;
+  transition: 0.25s border;
+  padding: 0 15px;
+  height: 56px;
+}
+
+.register-form form .icon-input {
+  background-color: #3e355e;
+  border: 2px solid #3e355e;
+}
+
+.form-section form .icon-input .feather {
+  transition: 0.25s color;
+  color: #595c5e;
+}
+
+.form-section form .icon-input .feather.active {
+  color: #FFF;
+}
+
+.form-section form.login-margin .icon-input:not(:nth-child(1)) {
+  margin-top: 15px;
+}
+
+.form-section form.register-margin .icon-input:not(:nth-child(1)) {
+  margin-top: 5px;
+}
+
+.feather{
+  width: 21px;
+  height: 21px;
+  margin-right: 8px;
+}
+
+.form-section form .icon-input:focus-within {
+  border: 2px solid #8743CC;
+}
+
+.form-section form .icon-input:focus-within .feather {
+  color: #8743CC;
+}
+
+.form-section form .icon-input input {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.form-section form a {
+  color: #BDBDBD;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 18px;
+  align-self: center;
+  margin-top: 5px;
+  transition: 0.25s color;
+}
+
+.form-section form a:hover {
+  color: #8743CC;
+}
+
+.form-section form a.left {
+  font-size: 15px;
+  margin-left: 20px;
+  align-self: flex-start;
+}
+
+.form-section form button {
+  font-family: 'Roboto', sans-serif;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #8743CC;
+}
+
+.form-section form button[type="submit"] {
+  margin-top: 35px;
+}
+
+.form-section form.register-margin button[type="submit"] {
+  margin-top: 30px;
+}
+
+.form-section form button.submit-github {
+  background-color: #202932;
+  margin-top: 15px;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.anime-right-to-center{
+  animation: right-to-center 1s ease-in-out;
+  -webkit-animation: right-to-center 1s ease-in-out;
+}
+
+.anime-center-to-left{
+  animation: center-to-left 1s ease-in-out;
+  -webkit-animation: center-to-left 1s ease-in-out;;
+}
+
+@keyframes right-to-center {
+  from { transform: translateX(120%); }
+  to { transform: translateX(0%); }
+}
+
+@keyframes center-to-left {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-120%); }
+}

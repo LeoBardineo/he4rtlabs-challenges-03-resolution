@@ -13,10 +13,10 @@ Também foi proposto alguns desafios extras, é possível conferir o resto **[aq
 🎨 Front-end (pasta web):
 - [X] Formulário de login
 - [X] Formulário de registro
-- [X] Transição suave entre os dois formulários
-- [X] Animação ao entrar na página, nos botões e nos inputs
-- [ ] Tela diferente para o registro
-- [ ] Transição com clip-path
+- [X] Transição suave entre os dois formulários com clip-path
+- [X] Animação ao entrar na página
+- [X] Tela diferente para o registro
+- [ ] Verificação dos dois formulários
 
 🚀 Back-end (pasta server):
 
