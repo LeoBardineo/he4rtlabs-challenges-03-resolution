@@ -55,11 +55,11 @@
 }
 
 @keyframes top-to-center {
-  from { transform: translateY(-120%); }
-  to { transform: translateY(0%); }
+  from { transform: translateY(-100px); }
+  to { transform: translateY(0px); }
 }
 
 @keyframes bottom-to-center {
-  from { transform: translateY(120%); }
-  to { transform: translateY(0%); }
+  from { transform: translateY(415px); }
+  to { transform: translateY(0px); }
 }
