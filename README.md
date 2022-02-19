@@ -16,7 +16,8 @@ Também foi proposto alguns desafios extras, é possível conferir o resto **[aq
 - [X] Transição suave entre os dois formulários com clip-path
 - [X] Animação ao entrar na página
 - [X] Tela diferente para o registro
-- [ ] Verificação dos dois formulários
+- [X] Verificação dos dois formulários
+- [ ] Responsividade
 
 🚀 Back-end (pasta server):
 
