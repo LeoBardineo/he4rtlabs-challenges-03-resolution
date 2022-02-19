@@ -1,24 +1,10 @@
+import { showToast } from './animate.js'
+
 const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 const usernameRegex = /^[a-zA-Z0-9]*$/
 const passwordRegex = /^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{8,100}$/
 
-const toastAnimationMiliseconds = 2700
-
-let toastOnScreen = false
 let everWrittenInConfirm = false
-
-const showToast = (message) => {
-  const toastElement = document.querySelector('.toast')
-  if(!toastOnScreen){
-    toastOnScreen = true
-    toastElement.classList.add('show')
-    toastElement.querySelector('b').innerText = message
-    setTimeout(() => {
-      toastElement.classList.remove('show')
-      toastOnScreen = false
-    }, toastAnimationMiliseconds)
-  }
-}
 
 // Colore a borda do icon-input e o icon, e ativa o toast
 const errorWarning = (e, message) => {

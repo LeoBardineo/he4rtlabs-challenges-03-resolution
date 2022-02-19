@@ -36,10 +36,10 @@ export const loginForm = `
 
 export const welcomeRegister = `
 <div class="anime-top-to-center">
-  <h2>A He4rt Developers é uma comunidade criada com o intuito de guiar
+  <p>A He4rt Developers é uma comunidade criada com o intuito de guiar
   quem deseja iniciar na área da programação.
-  </h2>
-  <span>Junte-se a nós!</span>
+  </p>
+  <strong>Junte-se a nós!</strong>
 </div>
 <div class="anime-bottom-to-center">
   <img src="assets/Saly-10.webp" alt="Logo da Heart Developers">

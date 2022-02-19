@@ -8,9 +8,13 @@
 }
 
 /* Bem-vindo à */
-.welcome p {
+.welcome p, .welcome-register p {
   font-weight: 300;
   font-size: 24px;
+}
+
+.welcome-register p {
+  margin-bottom: 24px;
 }
 
 /* He4rt Developers */
@@ -36,14 +40,8 @@
   justify-content: space-between;
 }
 
-.welcome-register h2 {
-  font-size: 24px;
-  margin-bottom: 24px;
-}
-
-.welcome-register span {
+.welcome-register strong {
   font-size: 36px;
-  font-weight: bold;
 }
 
 .anime-top-to-center{
