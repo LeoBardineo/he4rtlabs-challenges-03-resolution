@@ -1,4 +1,4 @@
-const welcomeLogin = `
+export const welcomeLogin = `
 <div class="anime-top-to-center">
   <p>Bem-vindo à</p>
   <h1>He4rt Developers</h1>
@@ -8,10 +8,10 @@ const welcomeLogin = `
 </div>
 `
 
-const loginForm = `
+export const loginForm = `
 <div class="center-content anime-right-to-center">
   <h1>Acesse a plataforma</h1>
-  <form class="login-margin">
+  <form action="/" method="POST" class="login-margin">
     <div class="icon-input">
       <i data-feather="mail"></i>
       <input type="email" name="loginEmail" id="loginEmail" placeholder="E-mail" required>
@@ -29,15 +29,15 @@ const loginForm = `
       <i data-feather="github"></i>
       Entrar pelo GitHub
     </button>
-    <a id="switch-login-btn" href="">Não tenho uma conta</a>
+    <a id="switch-login" href="">Não tenho uma conta</a>
   </form>
 </div>
 `
 
-const welcomeRegister = `
+export const welcomeRegister = `
 <div class="anime-top-to-center">
-  <h2>A He4rt Developers é uma comunidade totalmente sem fins lucrativos
-    formada por desenvolvedores incríveis.
+  <h2>A He4rt Developers é uma comunidade criada com o intuito de guiar
+  quem deseja iniciar na área da programação.
   </h2>
   <span>Junte-se a nós!</span>
 </div>
@@ -46,10 +46,10 @@ const welcomeRegister = `
 </div>
 `
 
-const registerForm = `
+export const registerForm = `
 <div class="center-content">
   <h1>Crie sua conta</h1>
-  <form class="register-margin">
+  <form action="/" method="POST" class="register-margin">
     <div class="icon-input">
       <i data-feather="user"></i>
       <input type="text" name="registerUsername" id="registerUsername" placeholder="Nome de usuário" required>
@@ -71,12 +71,12 @@ const registerForm = `
       <i data-feather="user-plus"></i>
       Cadastrar
     </button>
-    <a id="switch-register-btn" href="">Já tenho uma conta</a>
+    <a id="switch-register" href="">Já tenho uma conta</a>
   </form>
 </div>
 `
 
-const wrapperLogin = `
+export const wrapperLogin = `
 <div class="wrapper wrapper-login on-top">
   <section class="welcome">
     ${welcomeLogin}
@@ -87,7 +87,7 @@ const wrapperLogin = `
 </div>
 `
 
-const wrapperRegister = `
+export const wrapperRegister = `
 <div class="wrapper wrapper-register">
   <section class="welcome-register">
     ${welcomeRegister}
@@ -95,5 +95,12 @@ const wrapperRegister = `
   <section class="form-section register-form">
     ${registerForm}
   </section>
+</div>
+`
+
+export const toast = `
+<div class="toast">
+  <i data-feather="x-circle"></i>
+  <b>Mensagem</b>
 </div>
 `

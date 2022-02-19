@@ -1,0 +1,33 @@
+.toast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  padding: 16px;
+  z-index: 2;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+
+  cursor: pointer;
+  background-color: #DC3545;
+  border-radius: 10px;
+
+  visibility: hidden;
+}
+
+.toast.show {
+  visibility: visible;
+  animation: fadein .5s, fadeout .5s 2.5s;
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
