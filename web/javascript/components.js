@@ -21,7 +21,7 @@ export const loginForm = `
       <input type="password" name="loginPassword" id="loginPassword" placeholder="Senha" required>
     </div>
     <a class="left" href="/">Esqueci a senha</a>
-    <button type="submit">
+    <button id="loginSubmit" type="submit">
       <i data-feather="log-in"></i>
       Entrar
     </button>
@@ -67,7 +67,7 @@ export const registerForm = `
       <input type="password" name="registerConfirmPassword" id="registerConfirmPassword"
         placeholder="Confirmar senha" required>
     </div>
-    <button type="submit">
+    <button id="registerSubmit" type="submit">
       <i data-feather="user-plus"></i>
       Cadastrar
     </button>
