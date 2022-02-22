@@ -17,7 +17,7 @@ Também foi proposto alguns desafios extras, é possível conferir o resto **[aq
 - [X] Animação ao entrar na página
 - [X] Tela diferente para o registro
 - [X] Verificação dos dois formulários
-- [ ] Responsividade
+- [X] Responsividade
 
 🚀 Back-end (pasta server):
 
